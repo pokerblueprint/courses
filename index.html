@@ -11,180 +11,194 @@ body{
   font-family: Arial, sans-serif;
   background:#ffffff;
   color:#0f2a4d;
-  line-height:1.6;
 }
 
 .container{
   max-width:900px;
   margin:auto;
-  padding:20px;
+  padding:16px;
 }
 
-nav{
-  position:sticky;
-  top:0;
-  background:#ffffff;
+/* SIMPLE MENU BUTTONS */
+.menu{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  padding:12px;
   border-bottom:1px solid #ddd;
-  padding:10px;
-  font-size:14px;
 }
 
-nav a{
-  margin-right:12px;
-  color:#0f2a4d;
+.menu a{
+  padding:6px 10px;
+  border:1px solid #cbd5e1;
+  border-radius:6px;
   text-decoration:none;
-  font-weight:bold;
+  color:#0f2a4d;
+  font-size:12px;
+  background:#f8fafc;
 }
 
+/* SECTIONS */
 h2{
-  margin-top:40px;
-  border-bottom:1px solid #ddd;
+  margin-top:30px;
+  font-size:18px;
+  border-bottom:1px solid #eee;
   padding-bottom:5px;
 }
 
-.section{
-  margin-top:20px;
-}
-
-.item{
+/* HORIZONTAL TILE */
+.tile{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 12px;
+  border:1px solid #e5e7eb;
+  border-radius:8px;
   margin:6px 0;
+  background:#fafafa;
+  font-size:13px;
 }
 
-.back{
-  margin-top:15px;
-  display:block;
-  font-size:13px;
+.tag{
+  font-size:11px;
+  color:#64748b;
 }
 </style>
 </head>
 
 <body>
 
-<nav>
-NAVIGATION:
-<a href="#cash">CASH</a>
-<a href="#live">LIVE</a>
-<a href="#tournaments">TOURNAMENTS</a>
-<a href="#plo">PLO</a>
-<a href="#hu">HU</a>
-<a href="#mindset">MINDSET</a>
-<a href="#spin">SPIN</a>
-<a href="#short">SHORTDECK</a>
-<a href="#mixed">MIXED</a>
-<a href="#gto">GTO</a>
-</nav>
-
 <div class="container">
 
+<!-- MENU -->
+<div class="menu">
+<a href="#cash">CASH GAMES</a>
+<a href="#live">LIVE CASH</a>
+<a href="#tournaments">TOURNAMENTS</a>
+<a href="#plo">PLO OMAHA</a>
+<a href="#hu">HU HEADS-UP</a>
+<a href="#mindset">POKER MINDSET</a>
+<a href="#spin">SPIN & GO</a>
+<a href="#short">SHORTDECK</a>
+<a href="#mixed">MIXED GAMES</a>
+<a href="#gto">GTO SOLUTIONS</a>
+</div>
+
+<!-- CASH -->
 <h2 id="cash">CASH GAMES</h2>
-<div class="section">
 
-<div class="item">New 2026-2025</div>
-<div class="item">• Max Exploit Academy by Play It Smart 2026</div>
-<div class="item">• PlayItSmart Play & Explain 7 hours 2026</div>
-<div class="item">• Dose of Red Line 2026 100+ vids by Saulo</div>
-<div class="item">• Dose of Green Line 2026 100+ vids by Saulo</div>
-<div class="item">• Dose of Blue Line 2026 100+ vids by Saulo</div>
-<div class="item">• Upswing Lab 2.0 Mastery Path 2026</div>
-<div class="item">• Upswing Lab 2.0 Cash Game Track 2026</div>
-<div class="item">• Upswing Lab 2.0 Strategy Specials 2026</div>
-<div class="item">• Upswing Lab 2.0 Levels 2026</div>
-<div class="item">• Road To Midstakes by Frankie Carson (Run It Once) 2026</div>
-<div class="item">• RedLine Blueprint by Saulo Costa</div>
-<div class="item">• Saulo Costa Weekly 38 Group Coachings</div>
-<div class="item">• Best of Gary Blackwood Upswing</div>
-<div class="item">• Advanced Cash Game Tactics Upswing</div>
-<div class="item">• Online Cash Game Crash Course Upswing</div>
-<div class="item">• Play It Smart BootCamp</div>
-<div class="item">• NeviR Poker The Ultimate Guide Crush from NL2 to NL100</div>
-<div class="item">• Dominate with Data by FreeNachos (RIO)</div>
-<div class="item">• GTO Blueprint 15 Modules by Saulo Costa</div>
-<div class="item">• Timing Tells Blueprint by Saulo Costa</div>
-<div class="item">• Low Stakes Blueprint 2025 updated by Saulo Costa</div>
-<div class="item">• Smart EV Hand2Note 4 Video Course</div>
-<div class="item">• Cash Game Subscription Bundle by GTO Wizard (TheWakko, Jaser1337, Saulo Costa, Qing Yang and others)</div>
-<div class="item">• Expanding Your Range by Nuno Alvarez (RIO)</div>
-<div class="item">• Run It Once Elite Cash Game videos 2025</div>
-<div class="item">• The GTO Hand Histories by Saulo Costa (Hand Histories of GTO play)</div>
-<div class="item">• The Optimal Bet Size Sheet by Saulo Costa</div>
-<div class="item">• DEVIATE by Red Chip Poker</div>
-<div class="item">• Metagame Poker Cash Lines 2025</div>
+<div class="tile">Max Exploit Academy by Play It Smart 2026</div>
+<div class="tile">PlayItSmart Play & Explain 7 hours 2026</div>
+<div class="tile">Dose of Red Line 2026 100+ vids by Saulo</div>
+<div class="tile">Dose of Green Line 2026 100+ vids by Saulo</div>
+<div class="tile">Dose of Blue Line 2026 100+ vids by Saulo</div>
+<div class="tile">Upswing Lab 2.0 Mastery Path 2026</div>
+<div class="tile">Upswing Lab 2.0 Cash Game Track 2026</div>
+<div class="tile">Upswing Lab 2.0 Strategy Specials 2026</div>
+<div class="tile">Upswing Lab 2.0 Levels 2026</div>
+<div class="tile">Road To Midstakes by Frankie Carson (Run It Once) 2026</div>
+<div class="tile">RedLine Blueprint by Saulo Costa</div>
+<div class="tile">Saulo Costa Weekly 38 Group Coachings</div>
+<div class="tile">Best of Gary Blackwood Upswing</div>
+<div class="tile">Advanced Cash Game Tactics Upswing</div>
+<div class="tile">Online Cash Game Crash Course Upswing</div>
+<div class="tile">Play It Smart BootCamp</div>
+<div class="tile">NeviR Poker The Ultimate Guide Crush NL2-NL100</div>
+<div class="tile">Dominate with Data by FreeNachos (RIO)</div>
+<div class="tile">GTO Blueprint 15 Modules by Saulo Costa</div>
+<div class="tile">Timing Tells Blueprint by Saulo Costa</div>
+<div class="tile">Low Stakes Blueprint 2025 updated</div>
+<div class="tile">Smart EV Hand2Note Course</div>
+<div class="tile">GTO Wizard Subscription Bundle</div>
+<div class="tile">Expanding Your Range by Nuno Alvarez</div>
+<div class="tile">Run It Once Elite Cash Videos 2025</div>
+<div class="tile">The GTO Hand Histories by Saulo Costa</div>
+<div class="tile">The Optimal Bet Size Sheet</div>
+<div class="tile">DEVIATE by Red Chip Poker</div>
+<div class="tile">Metagame Poker Cash Lines 2025</div>
 
-<div class="back"><a href="#top">Back to MENU</a></div>
-</div>
-
+<!-- LIVE -->
 <h2 id="live">LIVE CASH GAMES</h2>
-<div class="section">
 
-<div class="item">• Upswing Lab 2.0 Live Cash Game Track 2026</div>
-<div class="item">• Live MDA Cheet Sheets by Savant Courses 2025 (the first-ever Live MDA cheat sheets give you online-level precision in live poker)</div>
-<div class="item">• Smash Live Cash by Nick Petrangelo</div>
-<div class="item">• Mastering Live Cash (Raise Your Edge)</div>
-<div class="item">• Beyond Tells by Blake Eastman</div>
-<div class="item">• Qing Yang, 1-to-1 Coaching (Poker Giraffe)</div>
-<div class="item">• Reading Poker Tells by Elwood</div>
+<div class="tile">Upswing Live Cash Track 2026</div>
+<div class="tile">Live MDA Cheat Sheets 2025</div>
+<div class="tile">Smash Live Cash Nick Petrangelo</div>
+<div class="tile">Mastering Live Cash Raise Your Edge</div>
+<div class="tile">Beyond Tells Blake Eastman</div>
+<div class="tile">Qing Yang Coaching Poker Giraffe</div>
+<div class="tile">Reading Poker Tells Elwood</div>
 
-<div class="back"><a href="#top">Back to MENU</a></div>
-</div>
-
+<!-- TOURNAMENTS -->
 <h2 id="tournaments">TOURNAMENTS</h2>
-<div class="section">
 
-<div class="item">New 2025-2026</div>
-<div class="item">• 26 Day Training Plan by GTO Lab 2026</div>
-<div class="item">• GTO Lab Tournament Savagery by Nick Petrangelo</div>
-<div class="item">• GTO Lab Tournament MTT Coaching</div>
-<div class="item">• GTO Lab Multiway Mastery by Isaac Haxton</div>
-<div class="item">• Upswing Lab 2.0 Mastery Path</div>
-<div class="item">• Upswing Lab 2.0 Tournament Track</div>
-<div class="item">• MTT Crash Course by Upswing 2025</div>
-<div class="item">• Advanced Tournament Strategy by Upswing 2025</div>
-<div class="item">• MTT Subscription Bundle 2025 by GTO Wizard (Kevin Rabichow, Espen Jørstad, Matt Hunt and others)</div>
-<div class="item">• MTT Learning Path 2025 RunItOnce</div>
-<div class="item">• ICM Bootcamp 2025 by RunItOnce</div>
-<div class="item">• BBZ Daily Seminars 2025</div>
-<div class="item">• MTT Bootcamp by Kevin Rabichow and others GTO Wizard 2025</div>
-<div class="item">• Run It Once Elite Tournament videos 2025</div>
+<div class="tile">26 Day Training Plan GTO Lab 2026</div>
+<div class="tile">GTO Lab Tournament Savagery</div>
+<div class="tile">MTT Crash Course Upswing</div>
+<div class="tile">ICM Bootcamp Run It Once</div>
+<div class="tile">MTT Learning Path Run It Once</div>
+<div class="tile">MTT Subscription Bundle GTO Wizard</div>
 
-<div class="item">2024 and Later</div>
-<div class="item">• Knockout Tournament Mastery by Alex Theologis</div>
-<div class="item">• Tournament Mastery - Road To Victory by Darren Elias and Nick Petrangelo</div>
-<div class="item">• The Game Plan by Kevin Rabichow (RIO)</div>
-<div class="item">• Pads on Pads by Run It Once</div>
-<div class="item">• Simple Poker Systems BBZ</div>
-<div class="item">• MTT Blueprint Course by Jon ApeStyles Van Fleet</div>
-<div class="item">• 3-Betting at Short Stacks - BBZ</div>
-<div class="item">• Moving Up - BBZ</div>
-<div class="item">• Multi-Way Bundle by SCOOP & WCOOP winner LuckyFish (BBZ Poker)</div>
-<div class="item">• Bungakat Final Table Bundle (BBZ Poker)</div>
-<div class="item">• ICM Masterclass (BBZ Poker)</div>
-<div class="item">• Tournaments Blueprint by Uri Peleg</div>
-<div class="item">• The Closer by Chip Leader Coaching</div>
-<div class="item">• Precision Poker by Alexandre Vuilleumier</div>
-<div class="item">• RunItOnce Elite Tournament videos 2024</div>
-<div class="item">• Apestyles Bootcamp - BBZ</div>
-<div class="item">• Jon Apestyles Van Fleet - BBZ</div>
-<div class="item">• Apestyles Bundle by (BBZ Poker)</div>
-<div class="item">• MTT Coaching Library (BBZ Poker)</div>
-<div class="item">• Lex Veldhus Bundle (BBZ Poker)</div>
-<div class="item">• ICM Unmasked - Nick Petrangelo (Upswing Poker)</div>
-<div class="item">• Petrangelo - Winning Poker tournaments (Upswing Poker)</div>
-<div class="item">• Nick Petrangelo - High Stakes MTT Sessions (Upswing Poker)</div>
-<div class="item">• MTT Expert Masterclass - (Raise Your Edge)</div>
-<div class="item">• Bounty Hunter by Pokernerve</div>
-<div class="item">• Bounty Beast - (Raise Your Edge)</div>
-<div class="item">• PokerCode by Fedor Holtz</div>
-<div class="item">• HU - End Boss Heads-Up System by Doug Polk</div>
-<div class="item">• HU - Inside The Arena by Doug Polk</div>
-<div class="item">• HU - Advanced Heads-up Mastery Doug Polk (Upswing Poker)</div>
-<div class="item">• HU - Run It Once Elite HU videos 2024</div>
+<div class="tile">Knockout Tournament Mastery Alex Theologis</div>
+<div class="tile">Tournament Mastery Darren Elias</div>
+<div class="tile">The Game Plan Kevin Rabichow</div>
+<div class="tile">Pads on Pads Run It Once</div>
+<div class="tile">Simple Poker Systems BBZ</div>
+<div class="tile">ICM Masterclass BBZ</div>
+<div class="tile">PokerCode Fedor Holz</div>
+<div class="tile">HU End Boss Doug Polk</div>
 
-<div class="back"><a href="#top">Back to MENU</a></div>
+<!-- PLO -->
+<h2 id="plo">PLO OMAHA</h2>
+
+<div class="tile">PLO6 Blueprint JNandez</div>
+<div class="tile">PLO Tournament Strategy</div>
+<div class="tile">Live PLO Strategy</div>
+<div class="tile">Heads-Up PLO Strategy</div>
+<div class="tile">PLO Mastermind</div>
+<div class="tile">This is PLO Phil Galfond</div>
+<div class="tile">Crushing Small Stakes PLO</div>
+
+<!-- HU -->
+<h2 id="hu">HEADS-UP</h2>
+
+<div class="tile">Expanding Your Range Nuno Alvarez</div>
+<div class="tile">End Boss Heads-Up System Doug Polk</div>
+<div class="tile">Inside The Arena Doug Polk</div>
+
+<!-- MINDSET -->
+<h2 id="mindset">POKER MINDSET</h2>
+
+<div class="tile">A-Game Poker Elliot Roe</div>
+<div class="tile">Mental Game JNandez</div>
+<div class="tile">Unchained Raise Your Edge</div>
+<div class="tile">Poker Psychology Seminar</div>
+
+<!-- SPIN -->
+<h2 id="spin">SPIN & GO</h2>
+
+<div class="tile">Spin & Go Bundle GTO Wizard</div>
+<div class="tile">Spin Strategy Diamond Pack</div>
+<div class="tile">Spin Bootcamp Best Poker Coaching</div>
+
+<!-- SHORT -->
+<h2 id="short">SHORT DECK</h2>
+
+<div class="tile">Short Deck Course Kane Kalas</div>
+
+<!-- MIXED -->
+<h2 id="mixed">MIXED GAMES</h2>
+
+<div class="tile">Mixed Games Mastery Jake Abdalla</div>
+<div class="tile">Mixed Game Crash Course Brian Hastings</div>
+<div class="tile">Run It Once Mixed Games Videos</div>
+
+<!-- GTO -->
+<h2 id="gto">GTO SOLUTIONS</h2>
+
+<div class="tile">RangeConverter PioSolver Packs</div>
+<div class="tile">RangeConverter MTT Pack</div>
+<div class="tile">6max 100bb NL100 Solutions</div>
+
 </div>
-
-<!-- (PLO, HU, MINDSET, SPIN, SHORT, MIXED, GTO continue same format exactly) -->
-
-</div>
-
 </body>
 </html>
