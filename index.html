@@ -3,220 +3,251 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Poker Courses Library</title>
-<!-- rebuild -->
+<title>Poker Library</title>
+
 <style>
 :root {
-  --bg: #0f172a;
-  --card: #1e293b;
+  --bg: #0b1220;
+  --panel: #111a2e;
+  --card: #16233d;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
   --accent: #38bdf8;
-  --text: #e2e8f0;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: system-ui, sans-serif;
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
 body {
+  margin: 0;
   background: var(--bg);
   color: var(--text);
-  padding: 16px;
+  display: flex;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.6rem;
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  background: var(--panel);
+  height: 100vh;
+  position: fixed;
+  padding: 20px;
+  overflow-y: auto;
 }
 
-.section {
-  margin-bottom: 24px;
-}
-
-.section h2 {
-  font-size: 1.2rem;
+.sidebar h2 {
+  font-size: 14px;
+  color: var(--muted);
   margin-bottom: 10px;
+}
+
+.nav a {
+  display: block;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  background: var(--card);
   color: var(--accent);
 }
 
+/* MAIN */
+.main {
+  margin-left: 260px;
+  padding: 30px;
+  width: 100%;
+}
+
+.header {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* SECTION */
+.section {
+  margin-bottom: 40px;
+}
+
+.section h3 {
+  margin-bottom: 12px;
+  color: var(--accent);
+}
+
+/* GRID CARDS */
 .grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 12px;
 }
 
 .card {
   background: var(--card);
-  padding: 12px 14px;
+  padding: 14px;
   border-radius: 12px;
-  font-size: 0.95rem;
-  line-height: 1.4;
   transition: 0.2s;
+  line-height: 1.4;
 }
 
 .card:hover {
-  transform: scale(1.02);
-  background: #273549;
+  transform: translateY(-2px);
+  background: #1b2b4a;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
-}
+/* MOBILE */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
 
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .nav a {
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 16px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<div id="menu"></div>
-
-<h1>♠️ Poker Course Library</h1>
-
-<!-- NAVIGATION MENU -->
-<div class="section">
-  <h2>📌 Navigation</h2>
-  <div class="grid">
-    <div class="card"><a href="#cash">CASH GAMES</a></div>
-    <div class="card"><a href="#live">LIVE CASH GAMES</a></div>
-    <div class="card"><a href="#tournaments">TOURNAMENTS</a></div>
-    <div class="card"><a href="#plo">PLO OMAHA</a></div>
-    <div class="card"><a href="#hu">HU HEADS-UP</a></div>
-    <div class="card"><a href="#mindset">POKER MINDSET</a></div>
-    <div class="card"><a href="#spin">SPIN & GO</a></div>
-    <div class="card"><a href="#shortdeck">SHORTDECK</a></div>
-    <div class="card"><a href="#mixed">MIXED GAMES</a></div>
-    <div class="card"><a href="#gto">GTO SOLUTIONS</a></div>
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2>NAVIGATION</h2>
+  <div class="nav">
+    <a href="#cash">Cash Games</a>
+    <a href="#live">Live Cash</a>
+    <a href="#tournaments">Tournaments</a>
+    <a href="#plo">PLO</a>
+    <a href="#hu">Heads-Up</a>
+    <a href="#mindset">Mindset</a>
+    <a href="#spin">Spin & Go</a>
+    <a href="#short">Short Deck</a>
+    <a href="#mixed">Mixed Games</a>
+    <a href="#gto">GTO Solutions</a>
   </div>
 </div>
 
-<!-- CASH GAMES -->
-<div class="section" id="cash">
-<h2>💰 CASH GAMES</h2>
+<!-- MAIN CONTENT -->
+<div class="main">
+
+<div class="header">♠ Poker Training Library</div>
+
+<!-- CASH -->
+<div id="cash" class="section">
+<h3>Cash Games</h3>
 <div class="grid">
-<div class="card">Max Exploit Academy — Play It Smart (2026)</div>
+<div class="card">Max Exploit Academy — Play It Smart</div>
 <div class="card">Upswing Lab 2.0 Cash Game Track</div>
 <div class="card">GTO Blueprint — Saulo Costa</div>
 </div>
-<a href="#menu">🔙 Back to Menu</a>
 </div>
 
-<!-- LIVE CASH -->
-<div class="section" id="live">
-<h2>🎥 LIVE CASH GAMES</h2>
+<!-- LIVE -->
+<div id="live" class="section">
+<h3>Live Cash Games</h3>
 <div class="grid">
-<div class="card">Upswing Live Cash Track 2026</div>
-<div class="card">Live MDA Cheat Sheets — Savant Courses</div>
-<div class="card">Mastering Live Cash — Raise Your Edge</div>
-<div class="card">Reading Poker Tells — Elwood</div>
+<div class="card">Live MDA Cheat Sheets</div>
+<div class="card">Mastering Live Cash — RYE</div>
+<div class="card">Reading Poker Tells</div>
 </div>
-<a href="#menu">🔙 Back to Menu</a>
 </div>
 
 <!-- TOURNAMENTS -->
-<div class="section" id="tournaments">
-<h2>🏆 TOURNAMENTS</h2>
-
-<h3>New 2025–2026</h3>
+<div id="tournaments" class="section">
+<h3>Tournaments</h3>
 <div class="grid">
-<div class="card">26 Day Training Plan — GTO Lab</div>
-<div class="card">Tournament Savagery — Nick Petrangelo</div>
-<div class="card">Multiway Mastery — Isaac Haxton</div>
-<div class="card">MTT Crash Course — Upswing</div>
-<div class="card">ICM Bootcamp — Run It Once</div>
-</div>
-
-<h3>2024 and Later</h3>
-<div class="grid">
-<div class="card">Knockout Tournament Mastery — Alex Theologis</div>
-<div class="card">The Game Plan — Kevin Rabichow</div>
+<div class="card">GTO Lab Tournament Savagery</div>
+<div class="card">ICM Bootcamp</div>
+<div class="card">MTT Expert Masterclass</div>
 <div class="card">PokerCode — Fedor Holz</div>
-<div class="card">ICM Masterclass — BBZ</div>
-<div class="card">MTT Expert Masterclass — Raise Your Edge</div>
 </div>
-
-<a href="#menu">🔙 Back to Menu</a>
 </div>
 
 <!-- PLO -->
-<div class="section" id="plo">
-<h2>🃏 PLO OMAHA</h2>
+<div id="plo" class="section">
+<h3>PLO Omaha</h3>
 <div class="grid">
 <div class="card">PLO6 Blueprint — JNandez</div>
-<div class="card">PLO Mastermind — JNandez</div>
 <div class="card">This is PLO — Phil Galfond</div>
-<div class="card">Crushing Small Stakes PLO</div>
-<div class="card">Live PLO Strategy — JNandez</div>
+<div class="card">PLO Mastermind</div>
 </div>
-<a href="#menu">🔙 Back to Menu</a>
 </div>
 
 <!-- HU -->
-<div class="section" id="hu">
-<h2>⚔️ HEADS-UP</h2>
+<div id="hu" class="section">
+<h3>Heads-Up</h3>
 <div class="grid">
-<div class="card">End Boss Heads-Up System — Doug Polk</div>
+<div class="card">End Boss Heads-Up System</div>
 <div class="card">Inside The Arena — Doug Polk</div>
-<div class="card">Advanced HU Mastery — Upswing</div>
 </div>
-<a href="#menu">🔙 Back to Menu</a>
 </div>
 
 <!-- MINDSET -->
-<div class="section" id="mindset">
-<h2>🧠 POKER MINDSET</h2>
+<div id="mindset" class="section">
+<h3>Poker Mindset</h3>
 <div class="grid">
-<div class="card">A-Game Masterclass — Elliot Roe</div>
-<div class="card">Unchained — Raise Your Edge</div>
-<div class="card">Mental Game — JNandez</div>
-<div class="card">Poker Psychology Seminar</div>
+<div class="card">A-Game Masterclass</div>
+<div class="card">Unchained — RYE</div>
+<div class="card">Mental Game Training</div>
 </div>
-<a href="#menu">🔙 Back to Menu</a>
 </div>
 
 <!-- SPIN -->
-<div class="section" id="spin">
-<h2>🎰 SPIN & GO</h2>
+<div id="spin" class="section">
+<h3>Spin & Go</h3>
 <div class="grid">
 <div class="card">Spin & Go Bundle — GTO Wizard</div>
-<div class="card">Advanced Spin Strategy Pack</div>
-<div class="card">Spin Bootcamp — Best Poker Coaching</div>
+<div class="card">Spin Bootcamp</div>
 </div>
-<a href="#menu">🔙 Back to Menu</a>
 </div>
 
-<!-- SHORTDECK -->
-<div class="section" id="shortdeck">
-<h2>🟡 SHORT DECK</h2>
+<!-- SHORT -->
+<div id="short" class="section">
+<h3>Short Deck</h3>
 <div class="grid">
 <div class="card">Short Deck Course — Kane Kalas</div>
 </div>
-<a href="#menu">🔙 Back to Menu</a>
 </div>
 
 <!-- MIXED -->
-<div class="section" id="mixed">
-<h2>🎲 MIXED GAMES</h2>
+<div id="mixed" class="section">
+<h3>Mixed Games</h3>
 <div class="grid">
-<div class="card">Mixed Game Crash Course — Brian Hastings</div>
-<div class="card">Mixed Games Mastery — Upswing</div>
+<div class="card">Mixed Game Crash Course</div>
+<div class="card">Mixed Games Mastery</div>
 </div>
-<a href="#menu">🔙 Back to Menu</a>
 </div>
 
 <!-- GTO -->
-<div class="section" id="gto">
-<h2>📊 GTO SOLUTIONS</h2>
+<div id="gto" class="section">
+<h3>GTO Solutions</h3>
 <div class="grid">
-<div class="card">RangeConverter PioSolver Packs</div>
+<div class="card">PioSolver Range Packs</div>
 <div class="card">Guerilla Poker Preflop Solutions</div>
-<div class="card">6-Max Cash Game Solver Packs</div>
 </div>
-<a href="#menu">🔙 Back to Menu</a>
+</div>
+
 </div>
 
 </body>
