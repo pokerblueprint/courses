@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poker Courses Library</title>
+
+<style>
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --accent: #38bdf8;
+  --text: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  padding: 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  background: var(--card);
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  background: #273549;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<h1>♠️ Cash Game Courses</h1>
+
+<div class="section">
+  <h2>New 2026–2025</h2>
+  <div class="grid">
+    <div class="card">Max Exploit Academy — Play It Smart (2026)</div>
+    <div class="card">Play & Explain 7h — Play It Smart (2026)</div>
+    <div class="card">Dose of Red Line — Saulo (100+ vids)</div>
+    <div class="card">Dose of Green Line — Saulo</div>
+    <div class="card">Dose of Blue Line — Saulo</div>
+    <div class="card">Upswing Lab 2.0 Mastery Path</div>
+    <div class="card">Upswing Lab Cash Game Track</div>
+    <div class="card">Road To Midstakes — Frankie Carson</div>
+    <div class="card">RedLine Blueprint — Saulo Costa</div>
+    <div class="card">Dominate with Data — FreeNachos</div>
+    <div class="card">GTO Blueprint (15 Modules)</div>
+    <div class="card">Timing Tells Blueprint</div>
+    <div class="card">Low Stakes Blueprint 2025</div>
+    <div class="card">Smart EV Hand2Note Course</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>2024 and Later</h2>
+  <div class="grid">
+    <div class="card">Poker Blueprint — Uri Peleg</div>
+    <div class="card">Solver Mastery — 2 Card Confidence</div>
+    <div class="card">Cash Game Hero — Scrimitzu</div>
+    <div class="card">Red Line Mastery — TheJericho2</div>
+    <div class="card">Weapons of War — Carrot Corner</div>
+    <div class="card">GTO Wizard Bootcamp</div>
+    <div class="card">Precision Poker — Alexandre Vuilleumier</div>
+    <div class="card">Deep Stack Dominance — Upswing</div>
+    <div class="card">Exploit & Conquer — Upswing</div>
+    <div class="card">Play Like LLinus — Upswing</div>
+    <div class="card">Advanced Strategy — Kanu7</div>
+    <div class="card">PokerDetox Training Camp</div>
+    <div class="card">The Game Plan — Kevin Rabichow</div>
+    <div class="card">Smash Live Cash — Nick Petrangelo</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Live Cash Games</h2>
+  <div class="grid">
+    <div class="card">Upswing Live Cash Track 2026</div>
+    <div class="card">Live MDA Cheat Sheets — Savant</div>
+    <div class="card">Mastering Live Cash — Raise Your Edge</div>
+    <div class="card">Beyond Tells — Blake Eastman</div>
+    <div class="card">Reading Poker Tells — Elwood</div>
+  </div>
+</div>
+
+</body>
+</html>
